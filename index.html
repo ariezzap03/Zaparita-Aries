@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Online Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    #home {
+      background: #f7f7f7;
+    }
+    #about {
+      background: #ddd;
+    }
+    #projects {
+      background: #f7f7f7;
+    }
+    .project {
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      padding: 15px;
+      background-color: #fff;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="462645242_1618231842459102_6227032030843300710_n.jpg" alt="My Portfolio Logo" style="max-width: 100px; border-radius: 50%; margin-bottom: 1rem;">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is the landing page of my personal portfolio.</p>
+    <button onclick="showAlert()">Click Me</button>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Aries A. Zaparita, a passionate and experienced professional specializing in network security and IT solutions. Over the years, I've developed a deep understanding of the ever-evolving landscape of digital threats and the strategies needed to defend against them. I am dedicated to ensuring the safety and integrity of systems, networks, and data in today's fast-paced technological environment.</p>
+    <p>With a strong background in cybersecurity, I focus on preventing unauthorized access, protecting sensitive information, and responding to emerging vulnerabilities. I believe that in the digital age, security is not just a technical requirement but a fundamental pillar of trust between businesses and their users. Through proactive measures and advanced security protocols, I help organizations safeguard their networks and maintain operational continuity.</p>
+    <p>Beyond just security, I am also enthusiastic about IT infrastructure and solutions that support innovation and business growth. I enjoy troubleshooting, optimizing systems, and implementing scalable solutions that enhance overall performance. My goal is to bridge the gap between technology and security, creating a safe and efficient environment for individuals and companies to thrive in the digital world.</p>
+</section> 
+
+  
+
+  <footer>
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showAlert() {
+      alert('Welcome to my portfolio!');
+    }
+  </script>
+</body><section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Network Security Monitoring System</h3>
+      <p>This project involves the development of a comprehensive network security monitoring system designed to detect and prevent potential threats in real-time. The system uses advanced algorithms to analyze network traffic, identify vulnerabilities, and generate alerts for system administrators. It aims to provide businesses with an effective tool to enhance their cybersecurity posture and minimize the risk of data breaches.</p>
+    </div>
+    <div class="project">
+      <h3>Secure Web Application Firewall (WAF)</h3>
+      <p>The Secure Web Application Firewall (WAF) project focuses on building a robust security layer that protects web applications from common cyberattacks such as SQL injection, cross-site scripting (XSS), and DDoS attacks. By filtering and monitoring HTTP requests, the WAF ensures that malicious traffic is blocked before it reaches the application server, safeguarding sensitive user data and ensuring the integrity of the application.</p>
+    </div>
+</section>
+</html>
